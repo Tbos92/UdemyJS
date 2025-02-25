@@ -32,3 +32,25 @@ function loopOverSeatingChart() {
 }
 
 loopOverSeatingChart();
+
+// We can use for... of loops to make this visually simpler.
+
+function forOfSeatingChart() {
+  const seatingChart = [
+    ["Kristen", "Erik", "Namita"],
+    ["Geoffrey", "Juanita", "Antonio", "Kevin"],
+    ["Yuma", "Sakura", "Jack", "Erika"],
+  ];
+
+  let rowNum = 1;
+
+  for (let row of seatingChart) {
+    console.log(`Row #${rowNum++}`);
+
+    for (let student of row) {
+      console.log(`   ${student}`);
+    }
+  }
+}
+
+forOfSeatingChart();
