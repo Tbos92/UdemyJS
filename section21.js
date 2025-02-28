@@ -31,11 +31,11 @@ let isChild = makeBetweenFunc(0, 17);
 let isAdult = makeBetweenFunc(18, 64);
 let isSenior = makeBetweenFunc(65, 120);
 
-console.log(isSenior(32));
-console.log(isSenior(72));
-console.log(isAdult(21));
-console.log(isAdult(2));
-console.log(isChild(21));
-console.log(isChild(2));
+// console.log(isSenior(32));
+// console.log(isSenior(72));
+// console.log(isAdult(21));
+// console.log(isAdult(2));
+// console.log(isChild(21));
+// console.log(isChild(2));
 
 
