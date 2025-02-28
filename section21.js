@@ -38,4 +38,19 @@ let isSenior = makeBetweenFunc(65, 120);
 // console.log(isChild(21));
 // console.log(isChild(2));
 
+// Methods Exercise
+// Define an object called square, which will hold methods that have to
+// do with the geometry of squares. It should contain two methods, area and perimeter
 
+// area should accept the length of a side (all sides are the same in a square) and then return the side squared.
+
+// perimeter should accept the length of a side and return that side multiplied by 4.
+
+const squareMethod = {
+  area(side) {
+    return Math.pow(side, 2);
+  },
+  perimeter(side) {
+    return side * 4;
+  },
+};
