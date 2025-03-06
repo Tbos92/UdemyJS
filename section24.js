@@ -85,4 +85,129 @@ let doneTodos = document.querySelectorAll(".done");
 
 const checkbox = document.querySelector("#scales");
 
-// 
+/*Project HTML:
+
+<!DOCTYPE html>
+
+<head>
+    <title>Pickles</title>
+    <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+    <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <!--PLEASE LEAVE THIS LINE ALONE! MAKE YOUR CHANGES USING JAVASCRIPT!!-->
+    <h1>Pickles Are <span>Delicious</span></h1>
+</body>
+
+</html>
+*/
+
+// JS:
+document.querySelector("span").innerText = "Disgusting";
+
+/*Project HTML:
+
+<!--DONT CHANGE ANYTHING IN THIS FILE, PLEASE!-->
+Egg and Chicken
+
+
+<h4>Which Came First?</h4>
+<img src="https://images.unsplash.com/photo-1607690424560-35d967d6ad7c?w=200">
+<!-- image source: unsplash.com -->
+
+<!DOCTYPE html>
+
+</html>
+*/
+
+// JS
+document
+  .querySelector("img")
+  .setAttribute(
+    "src",
+    "https://images.unsplash.com/photo-1581061090142-c2cd0ec9f021?w=200"
+  );
+document.querySelector("img").setAttribute("alt", "chicken");
+
+/*Project HTML:
+
+<!DOCTYPE html>
+
+<head>
+    <title>Forest</title>
+    <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+    <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+   <div id="container">
+        <h1>I &hearts; Trees</h1>
+        <img src="https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="">
+    </div>
+</body>
+
+</html>
+*/
+
+// JS:
+document.querySelector("#container").style.textAlign = "center";
+
+document.querySelector("img").style.width = "150px";
+
+document.querySelector("img").style.borderRadius = "50%";
+
+/*Project HTML:
+
+<!DOCTYPE html>
+
+<head>
+    <title>Rainbow</title>
+    <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+    <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nodelist-foreach-polyfill@1.2.0/index.min.js"></script>
+</head>
+
+<body>
+    <!--DON'T TOUCH THIS FILE PLEASE!-->
+    <h1>
+        <span>R</span>
+        <span>A</span>
+        <span>I</span>
+        <span>N</span>
+        <span>B</span>
+        <span>O</span>
+        <span>W</span>
+    </h1>
+</body>
+
+</html>
+
+*/
+
+// JS
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+
+const text = [...document.querySelectorAll("span")]
+
+for(let i = 0; i < text.length; i++) {
+    text[i].style.color = colors[i];
+}
+
+/*Project HTML:
+
+
+
+*/
+
+/*Project HTML:
+
+
+
+*/
