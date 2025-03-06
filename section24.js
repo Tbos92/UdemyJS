@@ -191,20 +191,61 @@ document.querySelector("img").style.borderRadius = "50%";
 */
 
 // JS
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
+const text = [...document.querySelectorAll("span")];
 
-const text = [...document.querySelectorAll("span")]
-
-for(let i = 0; i < text.length; i++) {
-    text[i].style.color = colors[i];
+for (let i = 0; i < text.length; i++) {
+  text[i].style.color = colors[i];
 }
 
 /*Project HTML:
 
+<head>
+    <title>ClasList</title>
+    <!--LEAVE THESE LINES ALONE, PLEASE! THEY MAKE THE LIVE PREVIEW WORK!-->
+    <script src="node_modules/babel-polyfill/dist/polyfill.js" type="text/javascript"> </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script>if(window.NodeList&&!NodeList.prototype.forEach){NodeList.prototype.forEach=Array.prototype.forEach}</script>
+</head>
 
+<body>
+    <!--LEAVE THIS FILE ALONE!-->
+    <ul>
+        <li>Hello</li>
+        <li class="highlight">Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li class="highlight">Hello</li>
+        <li>Hello</li>
+    </ul>
+</body>
+
+</html>
 
 */
+
+/*CSS:
+li {
+  background-color: #B10DC9;
+}
+
+.highlight {
+  background-color: #7FDBFF;
+}
+*/
+
+// JS:
+
+const listItems = document.querySelectorAll("li");
+
+for (let item of listItems) {
+  if (item.className === "highlight") {
+    item.className = "";
+  } else {
+    item.className = "highlight";
+  }
+}
 
 /*Project HTML:
 
