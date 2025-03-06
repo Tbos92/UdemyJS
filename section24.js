@@ -249,6 +249,34 @@ for (let item of listItems) {
 
 /*Project HTML:
 
+<!DOCTYPE html>
 
+<head>
+    <title>100 Buttons!</title>
+</head>
+
+<body>
+    <!--DO NOT TOUCH THIS FILE PLEASE!-->
+    <h1>Look At All My Buttons!</h1>
+    <div id="container">
+    
+    </div>
+    
+    
+    
+    <!--LEAVE THE BELOW CODE ALONE TOO, PLEASE! ALSO, NO NEED TO STUDY THE BELOW CODE, IT'S JUST AN INNER MECHANISM TO MAKE THIS CODING EXERCISE WORK FULLY!-->
+    <script>(function(arr){arr.forEach(function(item){if(item.hasOwnProperty('append'))return;Object.defineProperty(item,'append',{configurable:true,enumerable:true,writable:true,value:function append(){var argArr=Array.prototype.slice.call(arguments),docFrag=document.createDocumentFragment();argArr.forEach(function(argItem){var isNode=argItem instanceof Node;docFrag.appendChild(isNode?argItem:document.createTextNode(String(argItem)));});this.appendChild(docFrag);}});});})([Element.prototype,Document.prototype,DocumentFragment.prototype]);</script> 
+</body>
+
+</html>
 
 */
+
+// JS
+const div = document.querySelector("#container");
+
+for (let i = 0; i < 100; i++) {
+  let newButton = document.createElement("button");
+  newButton.innerText = "Hey!";
+  div.appendChild(newButton);
+}
